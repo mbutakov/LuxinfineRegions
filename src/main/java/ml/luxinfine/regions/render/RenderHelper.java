@@ -9,7 +9,6 @@ public class RenderHelper
 
     public static void drawBox(AxisAlignedBB aabb, String HEXColor, float opaque)
     {
-    	GL11.glPushMatrix();
         GL11.glDisable(GL11.GL_ALPHA_TEST);
         GL11.glEnable(GL11.GL_BLEND);
         GL11.glDisable(GL11.GL_CULL_FACE);
@@ -76,7 +75,6 @@ public class RenderHelper
         GL11.glEnable(GL11.GL_CULL_FACE);
         GL11.glDisable(GL11.GL_BLEND);
         GL11.glEnable(GL11.GL_ALPHA_TEST);
-        GL11.glPopMatrix();
     }
 
 }
